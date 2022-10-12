@@ -15,7 +15,6 @@
   <name>demo-app</name>
   <description>Spring Quotes App in Google Cloud</description>
 
-  
   <repositories>
     <repository>
       <id>central</id>
