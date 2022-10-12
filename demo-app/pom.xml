@@ -15,6 +15,22 @@
   <name>demo-app</name>
   <description>Spring Quotes App in Google Cloud</description>
 
+  
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Maven Central remote repository</name>
+      <url>artifactregistry://europe-west1-maven.pkg.dev/cg-next-2022/maven-remote</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <properties>
     <java.version>17</java.version>
 		<spring-cloud.version>2021.0.2</spring-cloud.version>
@@ -147,7 +163,7 @@
       <extension>
         <groupId>com.google.cloud.artifactregistry</groupId>
         <artifactId>artifactregistry-maven-wagon</artifactId>
-        <version>2.1.5</version>
+        <version>2.2.0</version>
       </extension>
     </extensions>
   </build>
@@ -213,18 +229,4 @@
       <url>artifactregistry://europe-west1-maven.pkg.dev/cg-next-2022/maven-remote</url>
     </repository>
   </distributionManagement>
-  <repositories>
-    <repository>
-      <id>central</id>
-      <name>Maven Central remote repository</name>
-      <url>artifactregistry://europe-west1-maven.pkg.dev/cg-next-2022/maven-remote</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 </project>
