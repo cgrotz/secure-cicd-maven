@@ -31,4 +31,4 @@ sed -e "s/project-id-here/${PROJECT_ID}/" templates/template.allowlist-policy.ya
 sed -e "s/project-id-here/${PROJECT_ID}/" templates/template.attestor-policy.yaml > policy/binauthz/attestor-policy.yaml
 # creates the Google Cloud Deploy pipeline
 gcloud deploy apply --file clouddeploy.yaml \
---region=us-central1 --project=$PROJECT_ID
+--region=europe-west1 --project=cg-next-2022
